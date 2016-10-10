@@ -11,7 +11,7 @@ public class Message implements Comparable<Message>{
 		this.datetime = datetime;
 		this.message = message;
 	}
-
+//lololo olololol repair 
 	public Date getDatetime() {
 		return datetime;
 	}
