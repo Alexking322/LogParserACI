@@ -12,6 +12,8 @@ public class Message implements Comparable<Message>{
 		this.message = message;
 	}
 //lololo olololol repair 
+	
+	//eshe odna strochka tak shto cic
 	public Date getDatetime() {
 		return datetime;
 	}
