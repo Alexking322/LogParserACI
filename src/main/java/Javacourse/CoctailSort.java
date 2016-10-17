@@ -35,4 +35,21 @@ public static void coctailSort(int[] arr){
                 arr[i] ^= arr[i+1];
             }
         }
-    
+        right--; // уменьшаем правую границу
+        //Сдвигаем к началу массива "легкие элементы"
+        for (int i = right; i > left ; i--)
+        {
+            if(arr[i] < arr[i-1])
+            {
+                arr[i] ^= arr[i-1];
+                arr[i-1] ^= arr[i];
+                arr[i] ^= arr[i-1];
+            }
+        }
+        left++; // увеличиваем левую границу
+    } while (left <= right);
+
+  
+}
+}
+
