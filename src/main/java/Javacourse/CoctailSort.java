@@ -16,6 +16,23 @@ public class CoctailSort {
 			                	System.out.print(arr[i] + "  ");
 			    }
 			                
-		}
 	}
+	
 
+public static void coctailSort(int[] arr){
+    int left = 0; // левая граница
+    int right = arr.length - 1; // правая граница
+
+    do
+    {
+        //Сдвигаем к концу массива "тяжелые элементы"
+        for (int i = left; i < right; i++)
+        {
+            if(arr[i] > arr[i+1])
+            {
+                arr[i] ^= arr[i+1];
+                arr[i+1] ^= arr[i];
+                arr[i] ^= arr[i+1];
+            }
+        }
+    
