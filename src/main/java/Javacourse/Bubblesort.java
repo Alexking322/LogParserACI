@@ -24,6 +24,9 @@ int arr[] = new int[(int) (Math.random() * 100)];
 
 public static void  bubbleSort(int[] arr){
     
+	/*Внешний цикл каждый раз сокращает фрагмент массива, 
+    так как внутренний цикл каждый раз ставит в конец
+    фрагмента максимальный элемент*/   
 	
     for(int i = arr.length-1 ; i > 0 ; i--){
         for(int j = 0 ; j < i ; j++){
