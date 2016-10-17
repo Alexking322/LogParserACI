@@ -7,7 +7,7 @@ public class Bubblesort {
 int arr[] = new int[(int) (Math.random() * 100)];
 		
 		for(int i = 0; i < arr.length; i++) {
-		    //элементу массива присваивается случайное число от 0 до 99
+		    //Elementu massiva prisvaevaetsya sluchainoe chislo ot 0 do 99
 		    arr[i] = (int)(Math.random() * 100);
 		    System.out.print(arr[i] + "  ");
 		}
@@ -24,16 +24,15 @@ int arr[] = new int[(int) (Math.random() * 100)];
 
 public static void  bubbleSort(int[] arr){
     
-	/*Внешний цикл каждый раз сокращает фрагмент массива, 
-    так как внутренний цикл каждый раз ставит в конец
-    фрагмента максимальный элемент*/   
+	/*Vneshniy cicl kajdiy raz sokrashaetsya fragment massiva,
+	  tak kak vnutreniy cicl kajdiy raz stavit v konec fragmen s max elementom massiva
+	 */   
 	
     for(int i = arr.length-1 ; i > 0 ; i--){
         for(int j = 0 ; j < i ; j++){
         	
-        	/*Сравниваем элементы попарно, 
-            если они имеют неправильный порядок, 
-            то меняем местами*/
+        	/* Sravnivaet elementy poparno, esli oni imeut nepravil'niy poryadok, to menyaet mestami.
+        	 */
         	
             if( arr[j] > arr[j+1] ){
                 int tmp = arr[j];
